@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Elite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header da página com o nome da barbearia e um menu de navegação. O "Header" define o cabeçalho da página-->
+    <header>
+        <h2>Barbearia Elite</h2>
+    <!-- Nav identifica a área de navegação da página, com links para as seções "Inicio", "Serviços" e "Contato"-->    
+        <nav>
+            <!-- ul cria uma lista não ordenada -->
+            <ul>
+                <!-- li cria um item da lista, e o "a" cria um link para a seção correspondente da página -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Main define o conteúdo principal da página. -->
+    <main>
+<!-- Section define uma seção da página, com um título, um parágrafo e um link para agendar horário. O "id" permite que a seção seja referenciada pelos links do menu de navegação. -->
+        <section id="inicio">
+            <h1>Seu estilo começa aqui</h1>
+            <p>Cortes modernos, autocuidado, cuidado com a barba e estilo para você se destacar.</p>
+<!-- a cria um link para a seção de contato, permitindo que o usuário agende um horário. -->          
+            <a href="#contato">Agendar horário</a>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            
+            <div class="lista-servicos">
+
+                <div class="card-servico card-corte-masculino">
+                    <h3>Corte Masculino</h3>
+                    <p>Cortes modernos para valorizar seu estilo.</p>
+                </div>
+
+                <div class="card-servico card-barba">
+                <h3>Barba</h3>
+                <p>Modelagem e cuidados para uma barba impecável.</p>
+            </div>
+
+                <div class="card-servico card-corte-mais-barba">
+                    <h3>Corte + Barba</h3>
+                    <p>O visual completo para um estilo impecável.</p>
+                </div>
+
+                <div class="card-servico card-tratamentos">
+                <h3>Tratamentos Capilares</h3>
+                <p>Tratamentos especializados para manter seu cabelo saudável e brilhante.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="contato">
+    <h2>Entre em contato</h2>
+    <p class="subtitulo">Agende seu horário e renove seu estilo.</p>
+    
+    <!-- Criamos um container flex para organizar as informações lado a lado -->
+    <div class="contato-container">
+        <div class="contato-info">
+            <h3>Atendimento</h3>
+            <p><strong>Telefone:</strong> <a href="tel:+551199999-9999">(11) 99999-9999</a></p>
+            <p><strong>Horário:</strong> Terça a Sábado: 09h às 20h</p>
+            <p><strong>Local:</strong> Rua do Estilo, 123 - Centro</p>
+        </div>
+
+        <div class="contato-acao">
+            <h3>Pronto para renovar o visual?</h3>
+            <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">Agendar pelo WhatsApp</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+<!-- Footer define o rodapé da página, com informações de direitos autorais.-->
+        <footer>
+    <div class="footer-conteudo">
+        <div class="footer-coluna">
+            <h3>Barbearia Elite</h3>
+            <p>O seu espaço de estilo e autocuidado masculino.</p>
+        </div>
+        
+        <div class="footer-coluna">
+            <h4>Redes Sociais</h4>
+            <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </div>
+    </div>
+    
+    <div class="footer-copyright">
+        <p>&copy; 2026 Barbearia Elite - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

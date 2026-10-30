@@ -1,0 +1,315 @@
+/* body seleciona o corpo inteiro da página. */
+body {
+/* background-color define a cor de fundo do corpo da página */
+   background-color: #111111;
+/* color define a cor do texto do corpo da página */
+   color: #ffffff;
+/* font-family define a família de fontes do corpo da página */
+    font-family: Arial, sans-serif; 
+/* remove a margem externa padrão */
+    margin: 0;
+/* padding cria espaço interno */
+    padding: 0;
+}
+
+header {
+/* background-color define a cor de fundo do cabeçalho */
+    background-color: #1c1c1c;
+/* padding cria espaço interno */
+    padding: 20px;
+/* display coloca os elementos filho do cabeçalho em uma linha */
+    display: flex;
+/* justify-content define o alinhamento horizontal dos itens do cabeçalho */
+    justify-content: space-between;
+/* align-items define o alinhamento vertical dos itens do cabeçalho */
+    align-items: center;
+    gap: 15px;
+}
+
+header h2 {
+/* Estilização do título do cabeçalho */
+    color: #d4af37;
+   margin: 0;
+   font-size: 40px;
+   background: center;
+  
+}
+
+header a {
+/* Deixa os links branco*/
+    color: #ffffff;
+/* text-decoration remove o sublinhado dos links */
+    text-decoration: none;
+}
+
+header ul {
+/* remove os marcadores da lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+/* Coloca os itens da navegação lado a lado */
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+header a:hover {
+/* muda a cor do link quando o mouse passa por cima */
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#inicio {
+/* Estilização da seção de início */
+    padding: 40px  20px 20px 20px;
+    text-align: center;
+    background-image: url("img/Barbearia Luxuosa em Luz Âmbar.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 45vh;
+}
+
+#inicio h1 {
+/* Estilização do título da seção de início */  
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+/* Estilização do parágrafo da seção de início */
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+/* display coloca o botão em linha */
+    display: inline-block;
+    /* padding cria espaço interno */
+    padding: 12px 24px;
+    /* background-color define a cor de fundo do botão */
+    background-color: #d4af37;
+    /*color define a cor do texto do botão */
+    color: #111111;
+    /* text-decoration remove o sublinhado do botão */
+    text-decoration: none;
+    /* border-radius arredonda os cantos do botão */
+    border-radius: 5px;
+    /* font-weight define o peso da fonte do botão */
+    font-weight: bold;
+     /* Adiciona transição suave para a transformação */
+     transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+     margin-bottom: 0;
+}
+
+#inicio a:hover {
+/* muda a cor do botão quando o mouse passa por cima */
+    background-color: #ffffff;
+   color: #111111;
+   cursor: pointer; 
+  transform: translateY(-4px); /* Move o botão para cima */
+}
+
+#servicos {
+/* Estilização da seção de serviços */
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    border-top: 1px solid #222222;
+}
+
+.lista-servicos {
+/* Estilização da lista de serviços */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.card-servico {
+/* Estilização dos cards de serviço */
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 8px;
+    width: 220px;
+    border: 1px solid #333333;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 180px;
+    align-items: center;
+    padding-top: 40px;
+
+    border-top: 3px solid #d4af37; /* Adiciona uma borda superior dourada */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-corte-masculino {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/corte_masculino.png");
+}
+
+.card-barba {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/barba.png");
+}
+
+.card-corte-mais-barba {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/corte_mais_barba.png");
+}
+
+.card-tratamentos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/tratamento_capilar.png");
+}
+
+.card-servico:hover {
+/* Adiciona efeito de sombra e elevação ao passar o mouse sobre o card */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px #d4af3733;
+}
+.card-servico h3 {
+/* Estilização do título do card de serviço */
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.card-servico p {
+/* Estilização do parágrafo do card de serviço */
+    color: #cccccc;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.card-servico:hover p {
+    opacity: 1;
+    display: block;
+    margin-top: 15px;
+}
+
+#contato {
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 1100px; /* Alinha com a largura da lista de serviços */
+    text-align: center;
+    border-top: 1px solid #222222;
+}
+
+#contato .subtitulo {
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.contato-info a {
+    color: #d4af37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    color: #ffffff;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço entre os dois blocos */
+    align-items: center;
+    flex-wrap: wrap; /* Garante que se a tela for pequena, eles fiquem um sob o outro */
+    gap: 30px;
+    text-align: left;
+}
+
+.contato-info, .contato-acao {
+    background-color: #111111;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    flex: 1;
+    min-width: 280px;
+    border-top: 3px solid #d4af37; /* Adiciona uma borda superior dourada */
+
+    text-align: center; /* Centraliza o conteúdo dentro de cada bloco */
+}
+
+.contato-info h3, .contato-acao h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #25d366; /* Cor característica ou use #d4af37 para manter o padrão */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4); /* Adiciona uma sombra sutil */
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.7); /* Aumenta a sombra ao passar o mouse */
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #cccccc;
+    padding-top: 30px;
+    border-top: 1px solid #d4af37;
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    gap: 20px;
+}
+
+.footer-coluna h3, .footer-coluna h4 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.footer-coluna p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilo para os links das redes sociais */
+.footer-coluna a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-coluna a:hover {
+    color: #d4af37;
+}
+
+.footer-copyright {
+    background-color: #111111;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    border-top: 1px solid #222222;
+}
